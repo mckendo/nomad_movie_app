@@ -1,6 +1,13 @@
-.movies .movie {
-  width: 45%;
+.detail__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.detail {
+  width: 60%;
   background-color: white;
+  margin-top: 100px;
   margin-bottom: 70px;
   font-weight: 300;
   padding: 20px;
@@ -11,12 +18,12 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .movies .movie {
-    width: 100%;
+  .detail {
+    width: 80%;
   }
 }
 
-.movies .movie a {
+.detail a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -24,7 +31,7 @@
   color: inherit;
 }
 
-.movie img {
+.detail img {
   position: relative;
   top: -50px;
   max-width: 150px;
@@ -34,19 +41,19 @@
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
-.movie .movie__title,
-.movie .movie__year {
+.detail .detail__title,
+.detail .detail__year {
   margin: 0;
   font-weight: 300;
 }
 
-.movie .movie__title {
+.detail .detail__title {
   margin-bottom: 5px;
   font-size: 24px;
   color: #2c2c2c;
 }
 
-.movie .movie__genres {
+.detail .detail__genres {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -54,8 +61,8 @@
   margin: 5px 0px;
 }
 
-.movie__genres li,
-.movie .movie__year {
+.detail__genres li,
+.detail .detail__year {
   margin-right: 10px;
   font-size: 14px;
 }

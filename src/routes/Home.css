@@ -22,3 +22,11 @@
   padding-top: 70px;
   width: 80%;
 }
+
+@media screen and (max-width: 500px) {
+  .movies {
+    padding: 20px;
+    padding-top: 70px;
+    width: 100%;
+  }
+}
